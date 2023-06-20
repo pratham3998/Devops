@@ -7,7 +7,7 @@
   <groupId>com</groupId>
   <artifactId>junit</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+   <packaging>war</packaging>
   <name>FortMilligrade</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.fortmilligrade.com</url>
@@ -33,7 +33,6 @@
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <packaging>war</packaging>
           <version>3.1.0</version>
         </plugin>
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
