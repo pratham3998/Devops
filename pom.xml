@@ -7,7 +7,6 @@
   <groupId>com</groupId>
   <artifactId>junit</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>	
   <name>junit</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -31,20 +30,6 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
-
-         <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>2.3</version>
-    <executions>
-      <execution>
-         <phase>package</phase>
-         <configuration>
-           <failOnMissingWebXml>false</failOnMissingWebXml>
-         </configuration>
-      </execution>
-    </executions>
-            </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
@@ -63,8 +48,11 @@
           <version>2.22.1</version>
         </plugin>
         <plugin>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.6</version>
+          <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
