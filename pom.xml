@@ -40,7 +40,7 @@
       <execution>
          <phase>package</phase>
          <configuration>
-           <webXml>/var/lib/jenkins/workspace/Fort milligrade/WebContent/WEB-INF/web.xml</webXml>
+           <failOnMissingWebXml>false</failOnMissingWebXml>
          </configuration>
       </execution>
     </executions>
