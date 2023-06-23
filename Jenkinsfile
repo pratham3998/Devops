@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage('Staging deployment') {
 			steps {
-				sh build job 'Fort_milligrade_Deploy_STAGE'
+				 build job: 'Fort_milligrade_Deploy_STAGE'
 			}
 		}
 	}
