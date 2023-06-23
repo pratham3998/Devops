@@ -17,5 +17,10 @@ pipeline {
 				 build job: 'Fort_milligrade_Deploy_STAGE'
 			}
 		}
+		stage('Staging prod') {
+			steps {
+				 build job: 'Fort_milligrade_Deploy_PROD'
+			}
+		}
 	}
 }
